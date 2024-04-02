@@ -45,9 +45,5 @@ int main() {
 		cout << endl;
 	}
 }
-int main()
-{
-    std::cout << "Hello World!\n";
-}
 
 
