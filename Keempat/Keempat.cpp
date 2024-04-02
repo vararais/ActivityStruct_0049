@@ -2,20 +2,20 @@
 #include <string>
 using namespace std;
 
-struct DetailAlamat{
-    string desa;
-    string kota;
-}
+struct DetailAlamat {
+	string desa;
+	string kota;
+};
 
-struct Mahasiswa {
-    string NIM;
-    string Nama;
-    DetailAlamat Alamat;
-    int umur;
+struct Mahasiswa{
+	string nim;
+	string nama;
+	DetailAlamat alamat;
+	string umur;
 };
 
 int main() {
-	mahasiswa mhs[3];
+	Mahasiswa mhs[3];
 	for (int i = 0; i < 3; i++) {
 		cout << "data ke-" << (i + 1) << ":" << endl;
 		cout << "Nomor mahasiswa : ";
@@ -28,6 +28,7 @@ int main() {
 		cin >> mhs[i].alamat.desa;
 		cout << "\t Nama kota : ";
 		cin >> mhs[i].alamat.kota;
+
 		cout << "Umur mahasiswa : ";
 		cin >> mhs[i].umur;
 		cin.ignore(1, '\n');
