@@ -8,9 +8,9 @@ struct DetailAlamat {
 };
 
 struct Mahasiswa {
-    string NIM;
-    string Nama;
-    string DetailAlamat;
+    string nim;
+    string nama;
+    DetailAlamat alamat;
     int umur;
 };
 
@@ -18,9 +18,9 @@ int main()
 {
     Mahasiswa mhs;
     cout << "Nomor Mahasiswa :";
-    getline(cin, mhs.NIM);
+    getline(cin, mhs.nim);
     cout << "Nama Mahasiswa :";
-    getline(cin, mhs.Nama);
+    getline(cin, mhs.nama);
 
 
     cout << "Alamat Mahasiswa :" << endl;
@@ -32,8 +32,8 @@ int main()
     cin >> mhs.umur;
 
     cout << endl;
-    cout << "\n NIM :" << mhs.NIM;
-    cout << "\n Nama :" << mhs.Nama;
+    cout << "\n NIM :" << mhs.nim;
+    cout << "\n Nama :" << mhs.nama;
     cout << "\n Alamat :";
     cout << "\n \t Desa :" << mhs.alamat.desa;
     cout << "\n \t Kota : " << mhs.alamat.kota;
