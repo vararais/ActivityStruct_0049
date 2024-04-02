@@ -24,7 +24,7 @@ int main()
 	cin >> mhs.Nama;
 
 
-	cout << "Alamat Mahasiswa :"; << endl;
+	cout << "Alamat Mahasiswa :" << endl;
 	cout << "\t Nama Desa :";
 	cin >> mhs.Alamat.desa;
 	cout << "t\ Nama Kota :";
