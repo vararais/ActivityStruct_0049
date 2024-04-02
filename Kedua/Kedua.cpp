@@ -14,7 +14,14 @@ struct Mahasiswa {
 	DetailAlamat alamt;
 	int umur;
 };
+
 int main()
 {
-   
+	Mahasiswa mhs;
+	cout << "Nomor Mahasiswa :";
+	cin >> mhs.NIM;
+	cout << "Nama Mahasiswa :";
+	cin >> mhs.Nama;
+
+
 }
